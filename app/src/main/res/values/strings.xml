@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Advanced RecyclerView</string>
+
+    <string name="simple_decorators">Simple Decorators</string>
+    <string name="simple_decorator_1">Simple Decorator 1</string>
+    <string name="simple_decorator_2">Simple Decorator 2</string>
+    <string name="simple_decorator_3">Both Simple Decorators</string>
+    <string name="complex_decorator">Complex Decorator</string>
+    <string name="item_animator">Item Animator</string>
+
+    <array name="main_titles">
+        <item>@string/simple_decorator_1</item>
+        <item>@string/simple_decorator_2</item>
+        <item>@string/simple_decorator_3</item>
+        <item>@string/complex_decorator</item>
+        <!--<item>@string/item_animator</item>-->
+    </array>
+</resources>
