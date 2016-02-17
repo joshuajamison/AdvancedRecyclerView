@@ -1,4 +1,4 @@
-package com.codeundone.advancedrecyclerview.complex;
+package com.codeundone.advancedrecyclerview.decoration.complex;
 
 import android.content.Context;
 import android.content.res.Resources;

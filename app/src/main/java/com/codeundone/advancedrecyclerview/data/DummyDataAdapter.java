@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 
 import com.codeundone.advancedrecyclerview.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DummyDataAdapter extends RecyclerView.Adapter<DummyDataHolder> {
@@ -16,7 +17,12 @@ public class DummyDataAdapter extends RecyclerView.Adapter<DummyDataHolder> {
 
     public DummyDataAdapter(Context context, List<DummyData> data) {
         inflater = LayoutInflater.from(context);
-        this.data = data;
+        this.data = new ArrayList<>(data);
+    }
+
+    public void addItem(DummyData item, int position) {
+        data.add(position, item);
+        notifyItemInserted(position);
     }
 
     @Override

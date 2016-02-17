@@ -1,9 +1,8 @@
-package com.codeundone.advancedrecyclerview.simple;
+package com.codeundone.advancedrecyclerview.decoration.simple;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.support.annotation.ColorInt;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
@@ -15,12 +14,12 @@ public class Simple2Decoration extends RecyclerView.ItemDecoration {
     private final Paint indentPaintLeft;
     private final Paint indentPaintRight;
 
-    public Simple2Decoration(Context context, @ColorInt int leftColor, @ColorInt int rightColor) {
+    public Simple2Decoration(Context context) {
         indentWidthPx = context.getResources().getDimensionPixelSize(R.dimen.indent_width);
         indentPaintLeft = new Paint();
-        indentPaintLeft.setColor(leftColor);
+        indentPaintLeft.setColor(context.getResources().getColor(R.color.indent_left));
         indentPaintRight = new Paint();
-        indentPaintRight.setColor(rightColor);
+        indentPaintRight.setColor(context.getResources().getColor(R.color.indent_right));
     }
 
     @Override

@@ -9,8 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.codeundone.advancedrecyclerview.animator.ItemAnimatorActivity;
-import com.codeundone.advancedrecyclerview.complex.ComplexDecorationActivity;
-import com.codeundone.advancedrecyclerview.simple.SimpleDecorationActivity;
+import com.codeundone.advancedrecyclerview.decoration.complex.ComplexDecorationActivity;
+import com.codeundone.advancedrecyclerview.decoration.simple.SimpleDecorationActivity;
 
 public class MainActivity extends AppCompatActivity {
 

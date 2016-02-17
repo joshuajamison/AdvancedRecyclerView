@@ -1,4 +1,4 @@
-package com.codeundone.advancedrecyclerview.complex;
+package com.codeundone.advancedrecyclerview.decoration.complex;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;

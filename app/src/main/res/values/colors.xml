@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="item_bg">#dddddd</color>
+    <color name="divider_color">@android:color/black</color>
+    <color name="indent_left">#0000FF</color>
+    <color name="indent_right">#FF0000</color>
 </resources>

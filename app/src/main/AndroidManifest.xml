@@ -15,8 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".simple.SimpleDecorationActivity" />
-        <activity android:name=".complex.ComplexDecorationActivity" />
+        <activity android:name=".decoration.simple.SimpleDecorationActivity" />
+        <activity android:name=".decoration.complex.ComplexDecorationActivity" />
         <activity android:name=".animator.ItemAnimatorActivity" />
     </application>
 
