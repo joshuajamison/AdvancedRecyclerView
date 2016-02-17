@@ -32,10 +32,10 @@ public class Simple1Decoration extends RecyclerView.ItemDecoration{
         final int left = parent.getPaddingLeft();
         final int right = parent.getWidth() - parent.getPaddingRight();
 
-        for (int i=0; i < childCount; i++) {
+        for (int i = 0; i < childCount - 1; i++) {
             View view = parent.getChildAt(i);
-            float top = view.getTop() - dividerHeightPx;
-            float bottom = view.getTop();
+            float top = view.getBottom();
+            float bottom = view.getBottom() + dividerHeightPx;
             c.drawRect(left, top, right, bottom, dividerPaint);
         }
     }

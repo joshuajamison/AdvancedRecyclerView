@@ -18,7 +18,6 @@
         <activity android:name=".decoration.NoDecorationActivity" />
         <activity android:name=".decoration.simple.SimpleDecorationActivity" />
         <activity android:name=".decoration.complex.ComplexDecorationActivity" />
-        <activity android:name=".animator.ItemAnimatorActivity" />
     </application>
 
 </manifest>

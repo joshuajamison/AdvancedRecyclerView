@@ -8,7 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.codeundone.advancedrecyclerview.animator.ItemAnimatorActivity;
 import com.codeundone.advancedrecyclerview.decoration.NoDecorationActivity;
 import com.codeundone.advancedrecyclerview.decoration.complex.ComplexDecorationActivity;
 import com.codeundone.advancedrecyclerview.decoration.simple.SimpleDecorationActivity;
@@ -50,11 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra(SimpleDecorationActivity.KEY_DECORATION, 2);
                 break;
             case 4:
-                intent.setClass(this, ComplexDecorationActivity.class);
-                break;
-            case 5:
             default:
-                intent.setClass(this, ItemAnimatorActivity.class);
+                intent.setClass(this, ComplexDecorationActivity.class);
                 break;
         }
         startActivity(intent);
