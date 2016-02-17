@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Advanced RecyclerView</string>
 
+    <string name="no_decorators">No Decorators</string>
+    <string name="no_decorator_1">No Decorator</string>
     <string name="simple_decorators">Simple Decorators</string>
     <string name="simple_decorator_1">Simple Decorator 1</string>
     <string name="simple_decorator_2">Simple Decorator 2</string>
@@ -9,6 +11,7 @@
     <string name="item_animator">Item Animator</string>
 
     <array name="main_titles">
+        <item>@string/no_decorator_1</item>
         <item>@string/simple_decorator_1</item>
         <item>@string/simple_decorator_2</item>
         <item>@string/simple_decorator_3</item>

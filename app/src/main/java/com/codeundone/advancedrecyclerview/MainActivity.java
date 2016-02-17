@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.codeundone.advancedrecyclerview.animator.ItemAnimatorActivity;
+import com.codeundone.advancedrecyclerview.decoration.NoDecorationActivity;
 import com.codeundone.advancedrecyclerview.decoration.complex.ComplexDecorationActivity;
 import com.codeundone.advancedrecyclerview.decoration.simple.SimpleDecorationActivity;
 
@@ -32,25 +33,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onItemClicked(int position) {
-        final Intent sdIntent = new Intent(this, SimpleDecorationActivity.class);
+        final Intent intent = new Intent();
         switch (position) {
             case 0:
-                startActivity(sdIntent);
+                intent.setClass(this, NoDecorationActivity.class);
                 break;
             case 1:
-                sdIntent.putExtra(SimpleDecorationActivity.KEY_DECORATION, 1);
-                startActivity(sdIntent);
+                intent.setClass(this, SimpleDecorationActivity.class);
                 break;
             case 2:
-                sdIntent.putExtra(SimpleDecorationActivity.KEY_DECORATION, 2);
-                startActivity(sdIntent);
+                intent.setClass(this, SimpleDecorationActivity.class);
+                intent.putExtra(SimpleDecorationActivity.KEY_DECORATION, 1);
                 break;
             case 3:
-                startActivity(new Intent(this, ComplexDecorationActivity.class));
+                intent.setClass(this, SimpleDecorationActivity.class);
+                intent.putExtra(SimpleDecorationActivity.KEY_DECORATION, 2);
                 break;
             case 4:
-                startActivity(new Intent(this, ItemAnimatorActivity.class));
+                intent.setClass(this, ComplexDecorationActivity.class);
+                break;
+            case 5:
+            default:
+                intent.setClass(this, ItemAnimatorActivity.class);
                 break;
         }
+        startActivity(intent);
     }
 }

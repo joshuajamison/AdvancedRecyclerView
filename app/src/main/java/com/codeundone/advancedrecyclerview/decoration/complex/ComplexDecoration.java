@@ -48,8 +48,8 @@ public class ComplexDecoration extends RecyclerView.ItemDecoration {
     /**
      * {@inheritDoc}
      * <p/>
-     * Inset first item of a group on the top (TBD).
-     * Inset all items left & right side (TBD).
+     * Inset first item of a group on the top.
+     * Inset all items left & right side.
      */
     @Override
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent,
