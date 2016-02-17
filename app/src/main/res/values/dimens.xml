@@ -5,7 +5,7 @@
 
     <dimen name="divider_height">1dp</dimen>
     <dimen name="indent_width">8dp</dimen>
-    <dimen name="indent_pad_left">20dp</dimen>
+    <dimen name="indent_pad_left">24dp</dimen>
     <dimen name="indent_pad_right">8dp</dimen>
     <dimen name="indent_pad_top">20dp</dimen>
 </resources>
